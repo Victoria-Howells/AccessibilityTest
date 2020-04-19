@@ -1,0 +1,116 @@
+﻿
+@{
+    ViewData["Title"] = "Content";
+}
+
+<h1>Content</h1>
+<h2>Punctuation</h2>
+<h3>A bad example of punctuation</h3>
+I ended this sentence without a period
+<br />
+
+I did not use any common punctuation
+<br />
+
+This has all been read out in one go
+<br />
+
+<h3>A good example of punctuation</h3>
+<div>
+    First check: Is important information read out?
+    test@email.co.uk
+</div>
+<div>Result: Yes it is.</div>
+
+<div>Second check: Does common punctuation cause pauses?</div>
+<div>Periods cause pauses. See.</div>
+<div>Semi-colon; They cause pauses too.</div>
+<div>Commas, also cause pauses.</div>
+<div>Question Marks? Yep.</div>
+<div>Exclamation Marks! Of course they do.</div>
+<div>
+    <p>Paragraph endings</p>
+    <p>Yep</p>
+</div>
+
+<h2>Abbreviations & Acronyms</h2>
+<div>
+    <p>Gov.Uk</p>
+    <p>gov.uk</p>
+    <p>www.gov.uk</p>
+    <p>
+        WCAG is pronounced as one word "cug". Even if you add a title in the abbr tag. <abbr tabindex="0 " title="Web Content Accessibility Guidelines">WCAG</abbr>.
+        See - it was ignored. Some readers allow you to change the settings, but in some it is not supported. Recommended to expand on first use
+    </p>
+    <p>Web Content Accessibility Guideline (WCAG)</p>
+    <p>VAT is pronounced as "vat"</p>
+    <p>Mr is pronounced as "mister"</p>
+</div>
+
+<h2>Images and alt text</h2>
+<div>With alt text the screen readers are told some information. <img src="../img/cannotRead.PNG" alt="It says You can't read" /></div>
+<div>Without an alt tag, it is . <img src="../img/cannotRead.PNG" /></div>
+
+<h2>Language</h2>
+<div>Without a proper tag used, the pronunciation is poor and can be hard to understand. J'aime le chocolat</div>
+<div>Setting the lang in the element helps with pronunciation in some screen readers. <blockquote lang="fr">J'aime le chocolat</blockquote></div>
+
+<h2>Advice followed</h2>
+<ul>
+    <li>Images have alternate text</li>
+    <li>Proper punctuation has been used, or hidden for screen readers</li>
+    <li>Headings accurately outline content</li>
+    <li>Content is not spread out over a page</li>
+    <li>Tabindexes have been used to make elements focusable by keyboard</li>
+    <li>Acronym has been expanded</li>
+</ul>
+
+<h2>WCAG Guidelines & Acceptance Criteria Satisfied</h2>
+<table>
+    <caption>WCAG Criteria</caption>
+    <thead>
+    <tr>
+        <th scope="col">Principle</th>
+        <th scope="col">Guideline</th>
+        <th scope="col">Success Criterion</th>
+        <th scope="col">Details</th>
+        <th scope="col">Criterion Number</th>
+        <th scope="col">Level</th>
+    </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Perceivable</td>
+            <td>Text Alternatives</td>
+            <td>Non-text Content</td>
+            <td>
+                All non-text content that is presented to the user has a text alternative that serves the equivalent purpose
+            </td>
+            <td>1.1.1</td>
+            <td>A</td>
+        </tr>
+        <tr>
+            <td>Understandable</td>
+            <td>Readable</td>
+            <td>Language of Parts</td>
+            <td>
+                The human language of each passage or phrase in the content can be programmatically determined except for proper names, technical terms, words of indeterminate language, and words or phrases that have become part of the vernacular of the immediately surrounding text.
+            </td>
+            <td>3.1.2</td>
+        <td>AA</td>
+    </tr>
+    <tr>
+        <td>Understandable</td>
+        <td>Readable</td>
+        <td>Language of Parts</td>
+        <td>
+            A mechanism for identifying the expanded form or meaning of abbreviations is available.
+        </td>
+        <td>3.1.4</td>
+        <td>AAA</td>
+    </tr>
+    </tbody>
+    <tfoot>
+
+    </tfoot>
+</table>

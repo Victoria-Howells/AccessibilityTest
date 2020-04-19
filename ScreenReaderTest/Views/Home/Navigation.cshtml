@@ -1,0 +1,141 @@
+﻿
+@{
+    ViewData["Title"] = "Navigation";
+}
+
+<h1>Navigation</h1>
+    <h2>Test Content</h2>
+
+        <h3>Meaningful link content</h3>
+            <div>
+                Good accessible example of link content. Makes sense out of content:
+                <a asp-controller="Home" asp-action="DocumentStructure">Read more about link content</a>
+            </div>
+<div>
+    Bad link content. Does not make sense out of context:
+    <a asp-controller="Home" asp-action="DocumentStructure">Read more</a>
+</div>
+
+<h3>Why you don't use text images</h3>
+    <img src="../img/cannotRead.PNG"/>
+    <img src="../img/youCannotDoIt.jpeg"/>
+    <div>Screen readers cannot read images.While they can read alt text, generally you should use text instead</div>
+
+
+<h3>Sitemap</h3>
+            TODO
+        <h3>Related Links</h3>
+            <ul>
+                <li>
+                    Not accessible link to lorem ipsum: <a asp-controller="Home" asp-action="DocumentStructure">Read more</a>
+                </li>
+                <li>
+                    <a asp-controller="Home" asp-action="Content">Punctuation and screen readers</a>
+                </li>
+                <li>
+                    <a asp-controller="Home" asp-action="Tables">Accessible Tables for screen readers</a>
+                </li>
+            </ul>
+    
+
+    <h2>Advice Followed</h2>
+        <ul>
+            <li>Consistent navigation from layout file - in same place and order</li>
+            <li>Buttons and icons are consistently labeled across pages</li>
+            <li>Links have meaningful content that makes sense out of context</li>
+            <li>Hidden links have been included for screen readers</li>
+            <li>Text has been used rather than images</li>
+            <li>We have a skip link</li>
+            <li>Provided a sitemap, links to all site pages in navigation list</li>
+        </ul>
+
+
+    <h2>WCAG Guidelines & Acceptance Criteria Satisfied</h2>
+<table>
+    <caption>WCAG Criteria</caption>
+    <thead>
+    <tr>
+        <th scope="col">Principle</th>
+        <th scope="col">Guideline</th>
+        <th scope="col">Success Criterion</th>
+        <th scope="col">Details</th>
+        <th scope="col">Criterion Number</th>
+        <th scope="col">Level</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Perceivable</td>
+        <td>Distinguishable</td>
+        <td>Images of Text</td>
+        <td>
+            If the technologies being used can achieve the visual presentation, text is used to convey information rather than images of text.
+        </td>
+        <td>1.4.5</td>
+        <td>AA</td>
+    </tr>
+    <tr>
+        <td>Understandable</td>
+        <td>Predictable</td>
+        <td>Consistent Navigation</td>
+        <td>
+            Navigational mechanisms that are repeated on multiple Web pages within a set of Web pages occur in the same relative order each time they are repeated, unless a change is initiated by the user.
+        </td>
+        <td>3.2.3</td>
+        <td>AA</td>
+    </tr>
+    <tr>
+        <td>Operable</td>
+        <td>Navigable</td>
+        <td>Multiple Ways</td>
+        <td>
+            More than one way is available to locate a Web page within a set of Web pages except where the Web Page is the result of, or a step in, a process.
+        </td>
+        <td>2.4.5</td>
+        <td>AA</td>
+    </tr>
+    <tr>
+        <td>Understandable</td>
+        <td>Predictable</td>
+        <td>Consistent Identification</td>
+        <td>
+            Components that have the same functionality within a set of Web pages are identified consistently.
+        </td>
+        <td>3.2.4</td>
+        <td>AA</td>
+    </tr>
+    <tr>
+        <td>Operable</td>
+        <td>Navigable</td>
+        <td>Bypass Blocks</td>
+        <td>
+            A mechanism is available to bypass blocks of content that are repeated on multiple Web pages.
+        </td>
+        <td>2.4.1</td>
+        <td>A</td>
+    </tr>
+    <tr>
+        <td>Operable</td>
+        <td>Navigable</td>
+        <td>Link Purpose</td>
+        <td>
+            The purpose of each link can be determined from the link text alone or from the link text together with its programmatically determined link context, except where the purpose of the link would be ambiguous to users in general.
+        </td>
+        <td>2.4.4</td>
+        <td>A</td>
+    </tr>
+    </tbody>
+    <tfoot>
+
+    </tfoot>
+</table>
+
+<h2>Code Snippets</h2>
+<p>Layout</p>
+<img src="../img/skiplink.PNG"/>
+<p>Style</p>
+<img src="../img/skiplinkcss.PNG" />
+
+
+
+
